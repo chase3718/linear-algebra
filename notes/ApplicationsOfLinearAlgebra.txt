@@ -1,0 +1,35 @@
+LINEAR ALGEBRA
+    -One of the main building blocks of ML
+    -Study of vectors, matrices, and linear functions
+
+Applications of LINEAR ALGEBRA in ML
+    -Data set and Data Files
+        -Either a matrix or a vectors
+    -Images and Photographs
+    -Data Preparation
+        -Dimensionality reduction 
+            -Data sets are represented as matrices
+            -Use Matrix factorization methods to reduce it into its constituent parts
+        -One hot encoding
+            -Used when working with categorical data 
+                -ex: As the class labels for classification problems, or categorical input variables
+    -Linear Regression
+        -For predicting numerical values in simpler regression problems
+        -The most common way of solving linear regression is via a least squares optimization
+    -Regularization
+        -Used to prevent a model from overfitting
+        -Often used to encourage a model to minimize the size of coefficients while it is being fit on data 
+    -Principal Component Analysis
+        -Method for automatically reducing the number of columns of a data set
+        -Used in ML to create projections of high-dimensional data for both visualization and training models
+        -The core of PCA method is a matrix factorization method
+    -Latent Semantic Analysis
+        -Form of data preparation used in natural language, a subfield of ML for working with text data
+        -Documents are usaully represented as a matrix of word occurrences
+        -Apply matrix factorization methods to them in order to be able to easily compare, query, and use them as basis for ML model
+    -Recommender Systems
+        -Predictive modeling problems that involve the recommendation of products
+        -Used in e-commerce, social media, and other systems that involve a user and a catalog of products
+    -Deep Learning
+        -Scaled up to multiple dimensions
+        -Work with vectors, matrices, and tensors of inputs and coefficients

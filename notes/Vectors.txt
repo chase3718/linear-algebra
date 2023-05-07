@@ -1,0 +1,101 @@
+VECTORS
+
+A Scalar is:
+    -A number
+    -Denoted with a lowercase symbol, such as a or b
+    -ex: weight, temperature, blood pressure
+
+A Vector is:
+    -An ordered list of numbers
+    -Denoted with lowercase bolded roman letters, such as a or b
+    -Some texts italics or print an arrow over the letter
+    -ex: position, velocity, acceleration
+
+Vector Characteristics:
+    -Dimensionality: the number of elements in a vector
+    -Orientation: column orentation (vertical) or row orientation (horizontal)
+
+Examples of Vectors 
+    -[1, 2, 3] is a 3-dimensional vector
+    -[1, 2, 3, 4, 5] is a 5-dimensional vector
+    -[1, 2, 3]T is a 3-dimensional column vector
+    -[1, 2, 3] is a 3-dimensional row vector
+
+Orientation is important because the wrong orientation can lead to unexpected results or errors
+
+Vector dimensionalaly is called the length or the shape of the vector in Python
+
+By convention, vectors are column orientated
+
+Transpose operation is used to change the orientation of a vector from row to column or column to row
+
+The algebraic interpetation of a vector is an ordered list of numbers, but the geometric interpretation of a vector is a line with a direction
+
+Vectors can be represented as a list or array
+
+example of a row vector in JS:
+    const v = [1, 2, 3]
+
+example of a column vector in JS:
+    const v = [
+        [1],
+        [2],
+        [3]
+    ]
+
+Vector Arithmetic
+
+Vector Addition:
+    -Add the corresponding elements of the two vectors
+    -Is only possible when the two vectors have the same dimensionality
+    -ex: [1, 2, 3] + [1, 2, 3] = [2, 4, 6]
+
+Vector Subtraction:
+    -Subtract the corresponding elements of the two vectors
+    -Is only possible when the two vectors have the same dimensionality
+    -ex: [1, 2, 3] - [1, 2, 3] = [0, 0, 0]
+
+Vector Scalar
+    -Multiply or divide every element of the vector by the same scalar value
+    -ex: [1, 2, 3] * 2 = [2, 4, 6]
+    -ex: [1, 2, 3] / 2 = [0.5, 1, 1.5]
+
+Vector Multiply
+    -Multiply the corresponding elements of the two vectors
+    -Is only possible when the two vectors have the same dimensionality
+    -ex: [1, 2, 3] * [1, 2, 3] = [1, 4, 9]
+
+Vector Divide
+    -Divide the corresponding elements of the two vectors
+    -Is only possible when the two vectors have the same dimensionality
+    -ex: [1, 2, 3] / [1, 2, 3] = [1, 1, 1]
+
+Vector Dot Product
+    -Multiply the corresponding elements of the two vectors and sum the results
+    -Is only possible when the two vectors have the same dimensionality
+    -ex: [1, 2, 3] . [1, 2, 3] = 1 + 4 + 9 = 14
+
+Vector Magnitude
+    -Calculate the square root of the sum of the squared elements of the vector
+    -ex: sqrt(1^2 + 2^2 + 3^2) = sqrt(14) = 3.7416573867739413
+
+Unit or Basis Vectors
+    -A vector with one element set to 1 and all other elements set to 0
+    -ex: [1, 0, 0]
+    -ex: [0, 1, 0]
+    -ex: [0, 0, 1]
+    -Are linearly independent of each other
+    -Span the whole space
+    -Aren't unique
+
+Spanning Set
+    -A set of vectors that can be combined to create any vector in the space
+    -ex: [1, 0, 0], [0, 1, 0], [0, 0, 1]
+    -ex: [1, 2, 3], [2, 4, 6], [3, 6, 9]
+    -ex: [1, 0, 0], [0, 1, 0], [1, 1, 0]
+    -The set {v1, v2, ..., vn} is a spanning set for V if every vector in V can be written as a linear combination of v1, v2, ..., vn
+
+Standard Basis Vectors 
+    -Are orthonormal meaning they're orthogonal to each other
+    -Can be represented as vectors e1=[1,0] and e2=[0,1]
+    -Can be used to represent any vector in 2D space
